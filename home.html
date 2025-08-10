@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from fileto.neocities.org/home by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 10 Aug 2025 16:47:56 GMT -->
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=0.65">
+    <title>home</title>
+   <link rel="shortcut icon" href="buttontest1.png" type="image/x-icon"> 
+    <link href="style.css" rel="stylesheet" type="text/css" media="all" >
+<style>
+
+  nav ul{height:350px; width:150px; }
+nav ul{overflow:hidden; overflow-y:scroll;}
+
+body
+* {
+  box-sizing: border-box;
+}
+
+{
+  margin:0;
+  padding:0;
+
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+div.a {
+  text-align: center;
+  font-size: 24px;
+  position:relative;
+}
+div.b {
+     margin-left: auto;
+  margin-right: auto;
+  bottom: 200px;
+}
+
+div.iconr{
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+   float: left;
+  padding:  0px;
+}
+
+div.iconc {
+ float: left;
+
+  padding: 20px;
+}
+</style>
+ 
+<script>
+ function imgWindow() {
+  window.open("image.html") }
+
+</script>
+
+<div class="b">
+<a href= "index.html">
+<img src="guards.png" alt=" bonus image" width="200" height="330" title="click me." > </a>
+</div>
+
+<!-- 889 318 /318 450-->
+
+<div class="a">
+welcome, visitor #<span id="hitcount"> </span>. click the guard to return.
+</div>
+
+<ul>
+<div class="iconr">
+<h3>gallery</h3>
+<div class="iconc">
+<a href= "oldgallery.html">
+<img src="button/ic_pit.gif" alt="oldgallery" width="150" height="150"></a>
+</div>
+
+<div class="iconc">
+<a href= "gallery.html">
+<img src="button/ic_gallery2.gif" alt="animation" width="150" height="150"></a>
+</div></div>
+
+<div class="iconr"> 
+<h3>story</h3>
+
+<div class="iconc">
+<a href= "comix.html"> 
+<img src="button/ic_comix.gif" alt="index" width="150" height="150"></a> </div>
+
+<div class="iconc">
+<a href= "radioquest.html">
+<img src="button/ic_rq.gif" alt="radioquest" width="150" height="150"></a> </div>
+
+<div class="iconc"><a href= "countingsheep1.html">
+<img src="button/ic_cs.gif" alt="countingsheep" width="150" height="150"></a></div>
+
+<div class="iconc">
+<a href= "root/index8f63.html?pg=1#showComic"> 
+<img src="button/ic_root.gif" alt="root" width="150" height="150"></a>
+
+</div>  
+</div>
+
+<div class="iconr"> 
+<h3>story game</h3>
+<div class="iconc">
+<a href= "https://fileto.itch.io/coffeequest">
+<img src="button/ic_cq.gif" alt="coffeequest" width="150" height="150"></a>
+</div>
+<div class="iconc">
+<a href= "https://fileto.itch.io/feverquest">
+<img src="button/ic_fq.gif" alt="feverquest" width="150" height="150"></a>
+</div>
+<div class="iconc">
+<a href= "https://fileto.itch.io/homehead">
+<img src="button/ic_home.gif" alt="homehead" width="150" height="150"></a>
+</div>
+</div>
+
+<div class="iconr"> 
+<h3>extra</h3>
+
+<div class="iconc">
+<a href= "link.html">
+<img src="button/ic_link.gif" alt="links" width="150" height="150"></a>
+</div>
+
+<div class="iconc">
+<a href= "musics.html">
+<img src="button/ic_mn.gif" alt="musics" width="150" height="150"></a>
+</div>
+
+<!--<div class="iconc">
+<a href= "https://fileto.neocities.org/publicnote">
+<img src="https://fileto.neocities.org/button/ic_note.gif" alt="notebook" width="150" height="150"></a>
+</div>-->
+
+<div class="iconc">
+<a href= "feed.xml"> 
+<img src="button/ic_rss.jpg" alt="index" width="150" height="150"></a>
+</div>
+
+
+
+<div class="iconc">
+<a href= "https://drive.google.com/drive/folders/1nlZ7J9uiKVHa23KinkXuekh_RpSXIXqK?usp=drive_link">
+<img src="button/ic_shimeji.gif" alt="radioshimeji" width="150" height="150"></a>
+</div></div>
+
+</ul>
+
+<script>
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      var site_data = JSON.parse(this.responseText);
+      var num_arr = site_data.info.views.toString().split("");
+      var num_str = "";
+      for (i = 0; i < num_arr.length; i++) {
+        num_str += num_arr[i];
+        if ( (num_arr.length-1 - i) % 3 == 0 && (num_arr.length-1 - i) != 0 ) {num_str += ",";}
+      }
+      document.getElementById("hitcount").innerHTML = num_str;
+    }
+  };
+  xhttp.open("GET.html", "https://weirdscifi.ratiosemper.com/neocities.php?sitename=fileto", true);
+  xhttp.send();
+</script>
+
+
+
+</body>
+
+
+<!-- Mirrored from fileto.neocities.org/home by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 10 Aug 2025 16:48:05 GMT -->
+</html>
